@@ -1,0 +1,165 @@
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>Languages and Automata Theory Project</title>
+
+</head>
+
+  <body style="background-color:mintcream;">
+
+
+
+<h1>FORMAL LANGUAGE AND AUTOMATA THEORY PROJECT</h1>
+
+<h2>What is Formal Languages and Automata Theory?</h2>
+
+<p style="color:darkcyan;">Formal Languages and Automata theory presents the theoretical aspects of computer science, and helps define infinite languages in finite ways.</p>
+
+<h3>INTRODUCTION</h3>
+
+<h4>	
+
+    Languages :</h4>
+
+    <p style="color:darkcyan;">The language L ⊆ Σ* recognized by an automaton is the set of all the words that are accepted by the automaton.</p>
+
+    <h4>	
+
+        Finite state automata</h4>
+
+        <p style="color:darkcyan;">A finite automaton is a type of finite automaton in which the
+
+            transitions are deterministic, in the sense that there will be exactly one transition from a state on an input symbol.AA deterministic finite automaton is represented formally by a 5-tuple <Q, Σ, δ,q0,F>, where:</p>
+
+        <ul>
+
+            <li style="color:darkcyan;">Q is a finite set of states.</li>
+
+            <li style="color:darkcyan;">Σ is a finite set of symbols, called the alphabet of the automaton.</li>
+
+            <li style="color:darkcyan;">δ is the transition function, that is, δ: Q × Σ → Q.</li>
+
+            <li style="color:darkcyan;">q0 is the start state, that is, the state of the automaton before any input has been processed, where q0∈ Q.</li>
+
+            <li style="color:darkcyan;">F is a set of states of Q (i.e. F⊆Q) called accept states.</li>
+
+        </ul>
+
+        <h4>Deterministic Finite Automata</h4>
+
+        <p style="color:darkcyan;">Deterministic finite automaton is a type of finite automaton in which the
+
+            transitions are deterministic, in the sense that there will be exactly one transition from a state on an input symbol. Formally,
+
+            a deterministic finite automaton (DFA) is a quintuple A = (Q, Σ, δ, q0, F),
+
+            where</p>
+
+            <ul>
+
+                <li style="color:darkcyan;">Q is a finite set called the set of states,
+
+                </li>
+
+                <li style="color:darkcyan;">Σ is a finite set called the input alphabet,</li>
+
+                <li style="color:darkcyan;">q0 ∈ Q, called the initial/start state</li>
+
+                <li style="color:darkcyan;">F ⊆ Q, called the set of final/accept states, and
+
+                </li>
+
+                <li style="color:darkcyan;">δ : Q × Σ −→ Q is a function called the transition function or next-state
+
+                    function.</li>
+
+            </ul>
+
+            <p style="color:firebrick;"><strong>Note that, for every state and an input symbol, the transition function δ
+
+                assigns a unique next state.</strong></p>
+
+               
+
+
+
+        <h5>Transition Table</h5>
+
+        <p style="color:darkcyan;">Instead of explicitly giving all the components of the quintuple of a DFA, we
+
+            may simply point out the initial state and the final states of the DFA in the
+
+            table of transition function, called transition table. For instance, we use an
+
+            arrow to point the initial state and we encircle all the final states. Thus, we
+
+            can have an alternative representation of a DFA, as all the components of the DFA now can be interpreted from this representation.</p>
+
+            <p style="color:darkcyan;">Below is the exmaple of the transition table where q1,q2,q3 are the state where q1 is the intial state and q3 is the final state :</p>
+
+            <img src="https://gateoverflow.in/?qa=blob&qa_blobid=436119006347968142" alt="Italian Trullti" style="width:10%">
+
+    <h4>	
+
+        Regular Expressions:</h4>
+
+        <p style="color:darkcyan;">Regular Expressions are used to denote regular languages. An expression is regular if:</p>
+
+        <ul>
+
+            <li style="color:darkcyan;">ɸ is a regular expression for regular language ɸ.</li>
+
+            <li style="color:darkcyan;">ɛ is a regular expression for regular language {ɛ}.</li>
+
+            <li style="color:darkcyan;">ɛ is a regular expression for regular language {ɛ}.</li>
+
+            <li style="color:darkcyan;">If a and b are regular expression, a + b is also a regular expression with language {a,b}.</li>
+
+            <li style="color:darkcyan;">If a and b are regular expression, ab (concatenation of a and b) is also regular.</li>
+
+            <li style="color:darkcyan;">If a is regular expression, a* (0 or more times a) is also regular.</li>
+
+          </ul>
+
+<h2><strong>In this project we will make DFA and check whether the string is accepted or not</strong></h2>
+
+<form method="post" >
+        {% csrf_token %}
+
+            <label for="States" style="color:dimgrey;">Enter the states</label><br>
+
+            <input type="string" name="States"><br>
+
+            <label for="ini_State" style="color:dimgrey;">Enter the initial state</label><br>
+
+            <input type="string" name="ini_State"><br>
+
+            <label for="fin_State" style="color:dimgrey;">Enter the final state</label><br>
+
+            <input type="string" name="fin_State"><br>
+
+            <label for="Symbols" style="color:dimgrey;">Enter the symbols</label><br>
+
+            <input type="string" name="Symbols"><br>
+
+            <label for="tran_State" style="color:dimgrey;">Enter the transition states</label><br>
+
+            <input type="string" name="tran_State"><br>
+
+            <label for="test_String" style="color:dimgrey;">Enter the string to check DFA will accept or not</label><br>
+
+            <input type="string" name="test_String"><br>
+
+            <input type="submit" value="Submit">
+
+          </form>
+
+    <h1>{{t1}}</h1>
+
+</body>
+
+</html>
