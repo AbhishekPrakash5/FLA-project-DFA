@@ -2,3 +2,4 @@
 
 ### Class Contributors
 - Abhishek Prakash <br/>
+- Karan B. Phuakan <br/>
