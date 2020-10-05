@@ -4,3 +4,4 @@
 - Abhishek Prakash <br/>
 - Karan B. Phuakan <br/>
 - Satyam Gupta <br/>
+- Jaanvi Agnihotri <br/>
